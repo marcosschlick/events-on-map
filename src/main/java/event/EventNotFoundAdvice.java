@@ -1,4 +1,4 @@
-package payroll;
+package event;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-class EmployeeNotFoundAdvice {
+class EventNotFoundAdvice {
 
-    @ExceptionHandler(EmployeeNotFoundException.class)
+    @ExceptionHandler(EventNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
-    String employeeNotFoundHandler(EmployeeNotFoundException ex) {
+    String eventNotFoundException(EventNotFoundException ex) {
         return ex.getMessage();
     }
 }

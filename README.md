@@ -4,14 +4,14 @@
 
 ### Usando Docker:
 ```bash
-docker build -t payroll .
-docker run -p 8080:8080 payroll
+docker build -t events .
+docker run -p 8080:8080 events
 ```
 
 ### Usando Podman:
 ```bash
-podman build -t payroll .
-podman run -p 8080:8080 payroll
+podman build -t events .
+podman run -p 8080:8080 events
 ```
 
 ## Acesso

@@ -7,6 +7,13 @@ body {
   margin: 50px 100px;
 }
 
+h1 {
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 60px;
+}
+
 .title {
   font-size: 30px;
   font-weight: bold;
